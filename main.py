@@ -1,4 +1,4 @@
-from parcours import parcours_profondeur, parcours_largeur
+from src.parcours import parcours_profondeur, parcours_largeur
 
 # representation du graph par une liste d'adjacences
 graph1 = {
@@ -13,8 +13,9 @@ graph1 = {
     8: [5]
 }
 
-print("# Parcours en profondeur")
-print(parcours_profondeur(graph1))
-print()
-print("# Parcours en largeur")
-print(parcours_largeur(graph1))
+if __name__ == "__main__":
+    print("# Parcours en profondeur")
+    print(parcours_profondeur(graph1))
+    print()
+    print("# Parcours en largeur")
+    print(parcours_largeur(graph1))
